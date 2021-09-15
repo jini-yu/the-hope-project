@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+#container section {padding: 3.3em 0;}
+section .inner ul {
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+section .inner ul li {
+    float: left;
+}
+
+section .inner ul li:last-child {
+    margin-right: 0;
+}
+
+/*mainvisual*/
+#mainVisual .inner {
+    width: 100%;
+}
+
+/*header*/
+header .top-header {
+    padding: 0;
+    height: calc(100vh - 80px); 
+    display: none;
+    z-index: 1000
+}
+header .top-header .gnb {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: calc(100vh - 120px); 
+    padding: 120px 0 0;
+    background: rgba(0,0,0,0.85);
+}
+header .top-header .gnb > a {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    font-size: 2.2rem;
+    color: rgba(255,255,255,0.8);
+}
+header .top-header .gnb > .logo {display: none;}
+header .top-header .sns {top: 90%; left: 50%; transform: translateX(-50%);
+}
+header .top-header .sns > a {
+    display: inline-block;
+    padding: 0; /*10p*/
+    width: 40px; height: 40px;
+    margin: 0 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;    
+}
+header .top-header .sns > a:hover {opacity: 1;}
+
+header .top-header .btn-donate {
+    top: 75%; right: 50%;
+    transform: translateX(50%);
+    padding: 0.5em 1.6em;
+    border-radius: 4px;
+    color: rgba(255,255,255,0.8);
+}
+header .top-header .btn-donate:hover {
+    background: #ffba00; 
+    border-color: transparent;
+}
+/*mobile menu*/
+header .util-header {position: absolute; top: 0; left: 0; width: 100%;}
+header .util-header .m-menu {
+    position: absolute;
+    top: 20px; right: 5%;
+    z-index: 1000;
+    display: block;
+}
+header .util-header .m-menu i {font-size: 2.4rem; color: #fff;}
+/*mobile logo*/
+header .util-header .m-logo {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 10px; left: 5%;
+    width: 100px; height: 40px;
+    background: url(../img/logo-mobile.png) no-repeat center/contain;
+}
+
+/*mainVisual*/
+#mainVisual .swiper-slide {background-position: left center}
+#mainVisual .main-title {width: 85%;}
+
+/*about*/
+#about {width: 90%; border-radius: 25px 25px 0 0; box-shadow: none;}
+#about .about-group li {
+    float: left;
+    width: calc(100%/3);
+    padding: 1.5em;
+}
+#about .about-group .text.hide {display: none;}
+
+/*causes*/
+#causes .inner {width: 85%}
+#causes .cause-list li {
+    width: calc(100%/3 - 30px);
+    margin-right: 30px;
+}
+
+/*how*/
+#how .inner {width: 100%;}
+#how .howImg {
+    float: none;
+    width: 100%;
+    height: 40vh;
+    background: url(../img/img-life01.jpg) no-repeat;
+    background-size: cover;
+}
+#how .how-text {
+    float: none;
+    width: 100%;
+    padding: 4em;
+    box-sizing: border-box;
+}
+#how .btn-area {text-align: center;}
+
+/*steps*/
+#steps .inner {width: 85% }
+#steps .step-list {margin-left: -50px}
+#steps .step-list li {
+    width: calc(100%/2 - 50px);
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+#steps .step-list li .over {font-size: 1.8rem;}
+
+#steps .step-list li span {font-size: 1.6rem;}
+
+/*movie*/
+#movie {padding-bottom: 0;height: auto;}
+
+/*story*/
+#story .pc-slide {display: block;}
+#story .mobile-slide {display: none;}
+#story .story-list li {
+    width: calc(100%/3 - 40px);
+    height: auto;
+    margin: 0 20px;
+}
+#story .story-list li .text {height: auto}
+
+/*footer*/
+footer .inner {width: 85%}
+footer .text-group {
+    float: left;
+    width: 40%
+}
+
+footer .sns {
+    float: right;
+    width: 20%;
+    text-align: right
+}
+}
